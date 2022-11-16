@@ -15,6 +15,7 @@
 		69EEF76E29251B8100D5C700 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 69EEF76D29251B8100D5C700 /* SnapKit */; };
 		69EEF77029251CB300D5C700 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEF76F29251CB300D5C700 /* TabBarController.swift */; };
 		69EEF7732925238200D5C700 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEF7722925238200D5C700 /* FeedTableViewCell.swift */; };
+		69EEF77529252E8000D5C700 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEF77429252E8000D5C700 /* UIButton+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		69EEF766292519A300D5C700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69EEF76F29251CB300D5C700 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		69EEF7722925238200D5C700 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		69EEF77429252E8000D5C700 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				69EEF763292519A300D5C700 /* LaunchScreen.storyboard */,
 				69EEF766292519A300D5C700 /* Info.plist */,
 				69EEF77129251CBB00D5C700 /* Scenes */,
+				69EEF77429252E8000D5C700 /* UIButton+.swift */,
 			);
 			path = Outsidestargram;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69EEF75D292519A000D5C700 /* FeedViewController.swift in Sources */,
+				69EEF77529252E8000D5C700 /* UIButton+.swift in Sources */,
 				69EEF77029251CB300D5C700 /* TabBarController.swift in Sources */,
 				69EEF759292519A000D5C700 /* AppDelegate.swift in Sources */,
 				69EEF75B292519A000D5C700 /* SceneDelegate.swift in Sources */,
