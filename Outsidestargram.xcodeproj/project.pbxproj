@@ -14,6 +14,7 @@
 		69EEF765292519A300D5C700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69EEF763292519A300D5C700 /* LaunchScreen.storyboard */; };
 		69EEF76E29251B8100D5C700 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 69EEF76D29251B8100D5C700 /* SnapKit */; };
 		69EEF77029251CB300D5C700 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEF76F29251CB300D5C700 /* TabBarController.swift */; };
+		69EEF7732925238200D5C700 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEF7722925238200D5C700 /* FeedTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		69EEF764292519A300D5C700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69EEF766292519A300D5C700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69EEF76F29251CB300D5C700 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		69EEF7722925238200D5C700 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				69EEF75C292519A000D5C700 /* FeedViewController.swift */,
 				69EEF76F29251CB300D5C700 /* TabBarController.swift */,
+				69EEF7722925238200D5C700 /* FeedTableViewCell.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				69EEF77029251CB300D5C700 /* TabBarController.swift in Sources */,
 				69EEF759292519A000D5C700 /* AppDelegate.swift in Sources */,
 				69EEF75B292519A000D5C700 /* SceneDelegate.swift in Sources */,
+				69EEF7732925238200D5C700 /* FeedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
