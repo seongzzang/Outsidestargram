@@ -53,8 +53,8 @@ final class FeedTableViewCell: UITableViewCell {
     private lazy var contentsLabel: UILabel = {
        let label = UILabel()
         label.textColor = .label
-        label.font = .systemFont(ofSize: 13.0, weight: .medium)
-        label.numberOfLines = 5
+        label.font = .systemFont(ofSize: 13.0,  weight: .medium)
+        label.numberOfLines = 3
         label.text = "잠이 와요 잠이와 뭐를 해도 잫이와요 아침도 저녁도 끝임없이 잠이 와 // 운동해요 운동해 살기위해 운동해요 상체도 하체도 계속해서 운동해 "
         
         return label
@@ -79,7 +79,7 @@ final class FeedTableViewCell: UITableViewCell {
             currentLikeCountLabel,
             contentsLabel,
             dateLabel
-        ].forEach { addSubview($0)}
+        ].forEach { addSubview($0) }
         
         
         postImageView.snp.makeConstraints {
