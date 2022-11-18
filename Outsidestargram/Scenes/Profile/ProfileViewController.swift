@@ -107,14 +107,27 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
 }
 
 private extension ProfileViewController {
+    
     func setupNavigationItems(){
         navigationItem.title = "UserName"
         
         let rightBarButton = UIBarButtonItem(image: UIImage(systemName: "ellipsis"),
                                              style: .plain,
                                              target: self,
-                                             action: nil)
+                                             action: #selector(didTapRgihtBarButtonItem))
         navigationItem.rightBarButtonItem = rightBarButton
+    }
+    
+    @objc func didTapRgihtBarButtonItem() {
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        [
+            UIAlertAction(title: "회원 정보 변경", style: .default){ _ in print("회원정보 변경")},
+            UIAlertAction(title: "탈퇴하기", style: .destructive){ _ in print("탈퇴하기")},
+            UIAlertAction(title: "닫기", style: .cancel){ _ in print("닫기")}
+        ].forEach { actionSheet.addAction($0)}
+        
+        present(actionSheet, animated: true, completion: nil)
     }
     
     func setupLayout() {
