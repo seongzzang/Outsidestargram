@@ -20,6 +20,8 @@ final class FeedTableViewCell: UITableViewCell {
     private lazy var likeButton: UIButton = {
        let button = UIButton()
         button.setImage(systemName: "heart")
+        button.addTarget(self, action: #selector(didTapLikeButton), for: .touchDown)
+        
         return button
     }()
     
@@ -139,6 +141,13 @@ final class FeedTableViewCell: UITableViewCell {
             $0.bottom.equalToSuperview().inset(16.0)
         }
         
+        
+    }
+}
+
+private extension FeedTableViewCell {
+    @objc func didTapLikeButton() {
+        print("likebutton tap")
         
     }
 }

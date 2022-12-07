@@ -7,6 +7,7 @@
 
 import SnapKit
 import UIKit
+import Kingfisher
 
 final class ProfileCollectionViewCell: UICollectionViewCell {
     private let imageView = UIImageView()
@@ -16,5 +17,12 @@ final class ProfileCollectionViewCell: UICollectionViewCell {
         imageView.snp.makeConstraints { $0.edges.equalToSuperview() }
         
         imageView.backgroundColor = .tertiaryLabel
+        
+    }
+    
+    func getImage(with url: URL){
+        if url != nil {
+            imageView.kf.setImage(with: url)
+        }
     }
 }
