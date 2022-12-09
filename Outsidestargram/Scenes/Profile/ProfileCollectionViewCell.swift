@@ -10,10 +10,14 @@ import UIKit
 import Kingfisher
 
 final class ProfileCollectionViewCell: UICollectionViewCell {
+    
     private let imageView = UIImageView()
+    
+    // private let profile: ProfileData
     
     func setup(with image: UIImage) {
         addSubview(imageView)
+        
         imageView.snp.makeConstraints { $0.edges.equalToSuperview() }
         
         imageView.backgroundColor = .tertiaryLabel
@@ -25,4 +29,5 @@ final class ProfileCollectionViewCell: UICollectionViewCell {
             imageView.kf.setImage(with: url)
         }
     }
+    
 }

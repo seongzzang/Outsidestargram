@@ -106,6 +106,11 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
         let width: CGFloat = (collectionView.frame.width / 3 ) - 1.0
         return CGSize(width: width, height: width)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = ProfileDetailViewController()
+        present(vc, animated: true, completion: nil)
+    }
 }
 
 private extension ProfileViewController {
