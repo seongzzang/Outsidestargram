@@ -10,6 +10,8 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
+    private var profiles: [ProfileData] = []
+    
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.layer.cornerRadius = 40.0
@@ -95,7 +97,7 @@ extension ProfileViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return profiles.count
     }
 }
 
