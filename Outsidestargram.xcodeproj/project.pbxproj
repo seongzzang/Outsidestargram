@@ -14,7 +14,7 @@
 		69BC4DD729422BDC008B99B4 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BC4DD629422BDC008B99B4 /* GetData.swift */; };
 		69BE58DF2940D5A600D0AB37 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 69BE58DE2940D5A600D0AB37 /* Kingfisher */; };
 		69EDFE9029438022007B536B /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EDFE8F29438022007B536B /* ProfileData.swift */; };
-		69EDFE9229439F36007B536B /* ProfileDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EDFE9129439F36007B536B /* ProfileDetailViewController.swift */; };
+		69EDFE9229439F36007B536B /* FeedScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EDFE9129439F36007B536B /* FeedScrollViewController.swift */; };
 		69EEF759292519A000D5C700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEF758292519A000D5C700 /* AppDelegate.swift */; };
 		69EEF75B292519A000D5C700 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEF75A292519A000D5C700 /* SceneDelegate.swift */; };
 		69EEF75D292519A000D5C700 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69EEF75C292519A000D5C700 /* FeedViewController.swift */; };
@@ -33,7 +33,7 @@
 		699125A32927D5CB00630311 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		69BC4DD629422BDC008B99B4 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		69EDFE8F29438022007B536B /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
-		69EDFE9129439F36007B536B /* ProfileDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailViewController.swift; sourceTree = "<group>"; };
+		69EDFE9129439F36007B536B /* FeedScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScrollViewController.swift; sourceTree = "<group>"; };
 		69EEF755292519A000D5C700 /* Outsidestargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Outsidestargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69EEF758292519A000D5C700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69EEF75A292519A000D5C700 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +62,7 @@
 		6954AF8F29266AE10054F27D /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				69EDFE9129439F36007B536B /* FeedScrollViewController.swift */,
 				69EEF75C292519A000D5C700 /* FeedViewController.swift */,
 				69EEF7722925238200D5C700 /* FeedTableViewCell.swift */,
 				6954AF9029266AF80054F27D /* UploadViewController.swift */,
@@ -76,7 +77,6 @@
 				699125A12927D0B500630311 /* ProfileDataView.swift */,
 				699125A32927D5CB00630311 /* ProfileCollectionViewCell.swift */,
 				69EDFE8F29438022007B536B /* ProfileData.swift */,
-				69EDFE9129439F36007B536B /* ProfileDetailViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 				6954AF9129266AF80054F27D /* UploadViewController.swift in Sources */,
 				69EEF77529252E8000D5C700 /* UIButton+.swift in Sources */,
 				69EEF77029251CB300D5C700 /* TabBarController.swift in Sources */,
-				69EDFE9229439F36007B536B /* ProfileDetailViewController.swift in Sources */,
+				69EDFE9229439F36007B536B /* FeedScrollViewController.swift in Sources */,
 				699125A42927D5CB00630311 /* ProfileCollectionViewCell.swift in Sources */,
 				69EEF759292519A000D5C700 /* AppDelegate.swift in Sources */,
 				69EEF75B292519A000D5C700 /* SceneDelegate.swift in Sources */,

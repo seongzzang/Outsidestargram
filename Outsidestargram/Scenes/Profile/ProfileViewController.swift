@@ -108,7 +108,7 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = ProfileDetailViewController()
+        let vc = FeedScrollViewController()
         present(vc, animated: true, completion: nil)
     }
 }
