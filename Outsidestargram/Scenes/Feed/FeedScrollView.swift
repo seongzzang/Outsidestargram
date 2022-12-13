@@ -25,6 +25,17 @@ class FeedScrollView: UIView {
 
 private extension FeedScrollView {
     func setupLayout(){
+        [imageView, nameLabel].forEach { addSubview($0)}
         
+        imageView.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(8.0)
+            $0.leading.equalToSuperview().inset(8.0)
+        }
+        
+        nameLabel.snp.makeConstraints {
+            $0.top.equalTo(imageView.snp.bottom).offset(3.0)
+            $0.leading.equalTo(imageView)
+            $0.bottom.equalToSuperview()
+        }
     }
 }
