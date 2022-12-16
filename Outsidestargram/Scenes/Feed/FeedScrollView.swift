@@ -12,6 +12,8 @@ class FeedScrollView: UIView {
     
     private lazy var imageView: UIImageView = {
        let imageView = UIImageView()
+        imageView.layer.cornerRadius = imageView.frame.width / 4
+        imageView.clipsToBounds = true
         return imageView
     }()
     
