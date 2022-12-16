@@ -10,7 +10,7 @@ import SnapKit
 
 class FeedViewController: UIViewController {
     
-    private let scrollView = UIScrollView()
+    private lazy var scrollView = UIScrollView()
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
@@ -32,7 +32,7 @@ class FeedViewController: UIViewController {
         return imagePickerController
     }()
 
-    let feedScrollView = FeedScrollView()
+    let feedScrollView = FeedScrollView(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,10 +101,16 @@ private extension FeedViewController {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
-            $0.height.equalTo(50)
+            $0.height.equalTo(100)
         }
         
         scrollView.addSubview(feedScrollView)
+        feedScrollView.snp.makeConstraints {
+            $0.top.equalTo(scrollView.snp.top).offset(5.0)
+            $0.leading.equalTo(scrollView).offset(5.0)
+            $0.trailing.equalTo(scrollView).offset(5.0)
+            $0.bottom.equalTo(scrollView.snp.bottom).offset(5.0)
+        }
         
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
