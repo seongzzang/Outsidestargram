@@ -12,7 +12,9 @@ class FeedScrollView: UIView {
     
     private lazy var imageView: UIImageView = {
        let imageView = UIImageView()
-        imageView.backgroundColor = .red
+        imageView.backgroundColor = .secondaryLabel
+        imageView.clipsToBounds = true
+        imageView.layer.cornerRadius = 25
         
         return imageView
     }()
@@ -42,15 +44,17 @@ private extension FeedScrollView {
         [imageView, nameLabel].forEach { addSubview($0)}
         
         imageView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(5.0)
-            $0.leading.equalToSuperview().offset(5.0)
-            $0.trailing.equalToSuperview().offset(5.0)
+            $0.top.equalToSuperview().inset(5.0)
+            $0.leading.equalToSuperview().inset(5.0)
+            $0.trailing.equalToSuperview().inset(5.0)
             $0.height.equalTo(50)
+            $0.width.equalTo(50)
         }
         
         nameLabel.snp.makeConstraints {
             $0.top.equalTo(imageView.snp.bottom).offset(3.0)
             $0.leading.equalTo(imageView)
+            $0.centerX.equalTo(imageView.snp.centerX)
             $0.bottom.equalToSuperview()
         }
     }
