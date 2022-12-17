@@ -53,7 +53,7 @@ private extension FeedScrollView {
         
         nameLabel.snp.makeConstraints {
             $0.top.equalTo(imageView.snp.bottom).offset(3.0)
-            $0.leading.equalTo(imageView)
+            //$0.leading.equalTo(imageView)
             $0.centerX.equalTo(imageView.snp.centerX)
             $0.bottom.equalToSuperview()
         }
