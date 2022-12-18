@@ -32,7 +32,7 @@ class FeedViewController: UIViewController {
         return imagePickerController
     }()
 
-    let feedScrollView = FeedScrollView(frame: .zero)
+    let feedScrollView = FeedScrollViewCell(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()

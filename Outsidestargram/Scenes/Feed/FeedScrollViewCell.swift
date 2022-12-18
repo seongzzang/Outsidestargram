@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class FeedScrollView: UIView {
+class FeedScrollViewCell: UIView {
     
     private lazy var imageView: UIImageView = {
        let imageView = UIImageView()
@@ -38,7 +38,7 @@ class FeedScrollView: UIView {
     }
 }
 
-private extension FeedScrollView {
+private extension FeedScrollViewCell {
     func setupLayout(){
         
         [imageView, nameLabel].forEach { addSubview($0)}
