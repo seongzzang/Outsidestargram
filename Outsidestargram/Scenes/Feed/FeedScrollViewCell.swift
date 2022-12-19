@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class FeedScrollViewCell: UIView {
+final class FeedScrollViewCell: UITableViewCell {
     
     private lazy var imageView: UIImageView = {
        let imageView = UIImageView()
@@ -26,19 +26,6 @@ class FeedScrollViewCell: UIView {
         return label
     }()
     
-    override init(frame: CGRect) {
-        super.init(frame: .zero)
-        setupLayout()
-    }
-    
-    
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
-private extension FeedScrollViewCell {
     func setupLayout(){
         
         [imageView, nameLabel].forEach { addSubview($0)}
