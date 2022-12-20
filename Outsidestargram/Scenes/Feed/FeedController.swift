@@ -12,7 +12,6 @@ class FeedController: UIViewController {
 
     private lazy var scrollView = UIScrollView()
     
-    
     let feedScrollView = FeedScrollViewCell(frame: .zero)
     let feedView = FeedViewController()
     

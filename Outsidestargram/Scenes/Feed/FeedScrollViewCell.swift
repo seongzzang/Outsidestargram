@@ -10,8 +10,8 @@ import SnapKit
 
 final class FeedScrollViewCell: UITableViewCell {
     
-    private lazy var imageView: UIImageView = {
-       let imageView = UIImageView()
+    private lazy var liveImageView: UIImageView = {
+        let imageView = UIImageView()
         imageView.backgroundColor = .secondaryLabel
         imageView.clipsToBounds = true
         imageView.layer.cornerRadius = 25
@@ -28,9 +28,9 @@ final class FeedScrollViewCell: UITableViewCell {
     
     func setupLayout(){
         
-        [imageView, nameLabel].forEach { addSubview($0)}
+        [liveImageView, nameLabel].forEach { addSubview($0)}
         
-        imageView.snp.makeConstraints {
+        liveImageView.snp.makeConstraints {
             $0.top.equalToSuperview().inset(5.0)
             $0.leading.equalToSuperview().inset(5.0)
             $0.trailing.equalToSuperview().inset(5.0)
@@ -39,9 +39,9 @@ final class FeedScrollViewCell: UITableViewCell {
         }
         
         nameLabel.snp.makeConstraints {
-            $0.top.equalTo(imageView.snp.bottom).offset(3.0)
+            $0.top.equalTo(liveImageView.snp.bottom).offset(3.0)
             //$0.leading.equalTo(imageView)
-            $0.centerX.equalTo(imageView.snp.centerX)
+            $0.centerX.equalTo(liveImageView.snp.centerX)
             $0.bottom.equalToSuperview()
         }
     }
