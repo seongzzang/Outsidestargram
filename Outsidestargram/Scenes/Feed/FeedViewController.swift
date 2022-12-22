@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class FeedViewController: UIViewController {
+class FeedViewController: UIView {
  
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
@@ -30,11 +30,13 @@ class FeedViewController: UIViewController {
         return imagePickerController
     }()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override init(frame: CGRect) {
         setupNavigationBar()
         setupTableView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }

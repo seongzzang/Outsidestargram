@@ -23,14 +23,12 @@ class FeedController: UIViewController {
         return tableView
     }()
     
-    let feedView = FeedViewController()
+    let feedView = FeedViewController(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
     }
-    
-    
     
 }
 
@@ -73,6 +71,7 @@ private extension FeedController {
             $0.bottom.equalTo(scrollView.snp.bottom).offset(5.0)
         }
         
+        view.addSubview(feedView)
 //        view.addSubview(tableView)
 //        tableView.snp.makeConstraints {
 //            $0.top.equalTo(scrollView.snp.bottom).inset(5.0)
