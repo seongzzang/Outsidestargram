@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class FeedViewController: UIView {
+class FeedViewController: UIViewController {
  
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
