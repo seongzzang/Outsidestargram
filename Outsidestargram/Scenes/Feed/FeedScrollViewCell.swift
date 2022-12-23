@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class FeedScrollViewCell: UITableViewCell {
+final class FeedScrollViewCell: UICollectionViewCell {
     
     private lazy var liveImageView: UIImageView = {
         let imageView = UIImageView()
