@@ -23,10 +23,19 @@ class FeedController: UIViewController {
         return tableView
     }()
     
+    private lazy var imagePickerController: UIImagePickerController = {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.allowsEditing = true
+        
+        return imagePickerController
+    }()
+    
     let feedView = FeedViewController(frame: .zero)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationBar()
         setupTableView()
     }
     
@@ -75,6 +84,20 @@ extension FeedController: UIImagePickerControllerDelegate, UINavigationControlle
 }
 
 private extension FeedController {
+    
+    func setupNavigationBar() {
+        navigationItem.title = "Outsidestargram"
+        
+        let uploadButton = UIBarButtonItem(image: UIImage(systemName: "plus.app"),
+                                           style: .plain,
+                                           target: self,
+                                           action: #selector(didTapUploadButton))
+        navigationItem.rightBarButtonItem = uploadButton
+    }
+    
+    @objc func didTapUploadButton() {
+        present(imagePickerController, animated: true)
+    }
     
     func setupTableView() {
         view.addSubview(scrollView)

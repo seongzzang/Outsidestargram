@@ -21,16 +21,9 @@ class FeedViewController: UIView {
         return tableView
     }()
     
-    private lazy var imagePickerController: UIImagePickerController = {
-        let imagePickerController = UIImagePickerController()
-        imagePickerController.sourceType = .photoLibrary
-        imagePickerController.allowsEditing = true
-        
-        return imagePickerController
-    }()
 
     override init(frame: CGRect) {
-        setupNavigationBar()
+        super.init(frame: .zero)
         setupTableView()
     }
     
@@ -55,24 +48,10 @@ extension FeedViewController: UITableViewDataSource {
 }
 
 private extension FeedViewController {
-
-    func setupNavigationBar() {
-        navigationItem.title = "Outsidestargram"
-        
-        let uploadButton = UIBarButtonItem(image: UIImage(systemName: "plus.app"),
-                                           style: .plain,
-                                           target: self,
-                                           action: #selector(didTapUploadButton))
-        navigationItem.rightBarButtonItem = uploadButton
-    }
-    
-    @objc func didTapUploadButton() {
-        present(imagePickerController, animated: true)
-    }
     
     func setupTableView() {
         
-        view.addSubview(tableView)
+        addSubview(tableView)
         tableView.snp.makeConstraints {
             $0.top.equalToSuperview().inset(5.0)
             $0.bottom.equalToSuperview()
