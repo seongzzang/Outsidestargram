@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class FeedViewController: UIViewController {
+class FeedViewController: UIView {
  
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
@@ -25,7 +25,6 @@ class FeedViewController: UIViewController {
         let imagePickerController = UIImagePickerController()
         imagePickerController.sourceType = .photoLibrary
         imagePickerController.allowsEditing = true
-        imagePickerController.delegate = self
         
         return imagePickerController
     }()
@@ -52,28 +51,6 @@ extension FeedViewController: UITableViewDataSource {
         cell.setup()
         
         return cell
-    }
-}
-
-extension FeedViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        var selectImage: UIImage?
-        
-        if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
-            selectImage = editedImage
-        } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            selectImage = originalImage
-        }
-        
-        print(selectImage)
-        
-        picker.dismiss(animated: true) { [weak self] in
-            let uploadViewController = UploadViewController(uploadImage: selectImage ?? UIImage())
-            let navigationController = UINavigationController(rootViewController: uploadViewController)
-            navigationController.modalPresentationStyle = .fullScreen
-            
-            self?.present(navigationController, animated: true)
-        }
     }
 }
 

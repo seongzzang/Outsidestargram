@@ -52,6 +52,28 @@ extension FeedController: UITableViewDelegate {
     
 }
 
+extension FeedController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        var selectImage: UIImage?
+        
+        if let editedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            selectImage = editedImage
+        } else if let originalImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            selectImage = originalImage
+        }
+        
+        print(selectImage)
+        
+        picker.dismiss(animated: true) { [weak self] in
+            let uploadViewController = UploadViewController(uploadImage: selectImage ?? UIImage())
+            let navigationController = UINavigationController(rootViewController: uploadViewController)
+            navigationController.modalPresentationStyle = .fullScreen
+            
+            self?.present(navigationController, animated: true)
+        }
+    }
+}
+
 private extension FeedController {
     
     func setupTableView() {
