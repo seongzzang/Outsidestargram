@@ -40,7 +40,7 @@ final class FeedScrollViewCell: UITableViewCell {
         
         nameLabel.snp.makeConstraints {
             $0.top.equalTo(liveImageView.snp.bottom).offset(3.0)
-            //$0.leading.equalTo(imageView)
+            $0.leading.equalTo(liveImageView)
             $0.centerX.equalTo(liveImageView.snp.centerX)
             $0.bottom.equalToSuperview()
         }
