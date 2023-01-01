@@ -57,10 +57,6 @@ extension FeedController: UITableViewDataSource {
     
 }
 
-extension FeedController: UITableViewDelegate {
-    
-}
-
 extension FeedController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         var selectImage: UIImage?
@@ -117,13 +113,12 @@ private extension FeedController {
         }
         
         view.addSubview(feedView)
-//        view.addSubview(tableView)
-//        tableView.snp.makeConstraints {
-//            $0.top.equalTo(scrollView.snp.bottom).inset(5.0)
-//            $0.bottom.equalToSuperview()
-//            $0.leading.equalToSuperview()
-//            $0.trailing.equalToSuperview()
-//        }
+        feedView.snp.makeConstraints {
+            $0.top.equalTo(scrollView.snp.bottom).inset(5.0)
+            $0.bottom.equalToSuperview()
+            $0.leading.equalToSuperview()
+            $0.trailing.equalToSuperview()
+        }
     }
 }
 
