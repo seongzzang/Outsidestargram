@@ -59,5 +59,10 @@ private extension FeedViewController {
             $0.trailing.equalToSuperview()
         }
     }
+    
+    @objc func didTapLikeButton() {
+        print("likebutton tap")
+        
+    }
 }
 

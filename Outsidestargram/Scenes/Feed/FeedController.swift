@@ -41,6 +41,12 @@ class FeedController: UIViewController {
     
 }
 
+extension FeedController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didTapScrollView()
+    }
+}
+
 extension FeedController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -101,6 +107,7 @@ private extension FeedController {
             $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
+            //$0.width.equalTo(400)
             $0.height.equalTo(100)
         }
         
@@ -119,6 +126,10 @@ private extension FeedController {
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
         }
+    }
+    
+    func didTapScrollView() {
+        print("select scroll view")
     }
 }
 
