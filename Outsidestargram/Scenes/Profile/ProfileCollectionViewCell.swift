@@ -24,10 +24,4 @@ final class ProfileCollectionViewCell: UICollectionViewCell {
         
     }
     
-    func getImage(with url: URL){
-        if url != nil {
-            imageView.kf.setImage(with: url)
-        }
-    }
-    
 }

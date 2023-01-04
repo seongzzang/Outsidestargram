@@ -85,6 +85,7 @@ final class ProfileViewController: UIViewController {
         
         setupLayout()
         setupNavigationItems()
+        
     }
 }
 
@@ -184,6 +185,12 @@ private extension ProfileViewController {
             $0.trailing.equalToSuperview()
             $0.top.equalTo(buttonStackView.snp.bottom).offset(16.0)
             $0.bottom.equalToSuperview()
+        }
+    }
+    
+    func getImage(with url: URL){
+        if url != nil {
+            profileImageView.kf.setImage(with: url)
         }
     }
 }

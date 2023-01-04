@@ -12,6 +12,8 @@ class FeedController: UIViewController {
 
     private lazy var scrollView = UIScrollView()
     
+    let profileViewController = ProfileViewController()
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.backgroundColor = .systemBackground
@@ -130,6 +132,7 @@ private extension FeedController {
     
     func didTapScrollView() {
         print("select scroll view")
+        self.present(profileViewController, animated: true, completion:nil)
     }
 }
 

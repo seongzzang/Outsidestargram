@@ -53,5 +53,7 @@ private extension ProfileDataView {
         
         addSubview(stackView)
         stackView.snp.makeConstraints {$0.edges.equalToSuperview()}
+        
+        
     }
 }
