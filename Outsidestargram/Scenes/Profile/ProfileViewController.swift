@@ -12,6 +12,8 @@ final class ProfileViewController: UIViewController {
     
     private var profiles: [ProfileData] = []
     
+    var url = URL(string: "")
+    
     private lazy var profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.layer.cornerRadius = 40.0
@@ -85,6 +87,7 @@ final class ProfileViewController: UIViewController {
         
         setupLayout()
         setupNavigationItems()
+        getImage(with: url ?? URL.init(string: ""))
         
     }
 }
