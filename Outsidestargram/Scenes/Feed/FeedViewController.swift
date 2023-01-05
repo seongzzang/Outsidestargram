@@ -10,6 +10,8 @@ import SnapKit
 
 class FeedViewController: UIView {
  
+    private var liveFeeds: [LiveFeedData] = []
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.backgroundColor = .systemBackground
@@ -35,7 +37,7 @@ class FeedViewController: UIView {
 
 extension FeedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return liveFeeds.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

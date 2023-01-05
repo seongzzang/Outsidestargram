@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6954AF9129266AF80054F27D /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954AF9029266AF80054F27D /* UploadViewController.swift */; };
+		696762CE296713A80095F090 /* LiveFeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696762CD296713A80095F090 /* LiveFeedData.swift */; };
 		699125A02927CC5800630311 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6991259F2927CC5800630311 /* ProfileViewController.swift */; };
 		699125A22927D0B500630311 /* ProfileDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699125A12927D0B500630311 /* ProfileDataView.swift */; };
 		699125A42927D5CB00630311 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699125A32927D5CB00630311 /* ProfileCollectionViewCell.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		6954AF9029266AF80054F27D /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		696762CD296713A80095F090 /* LiveFeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFeedData.swift; sourceTree = "<group>"; };
 		6991259F2927CC5800630311 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		699125A12927D0B500630311 /* ProfileDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataView.swift; sourceTree = "<group>"; };
 		699125A32927D5CB00630311 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				69EEF75C292519A000D5C700 /* FeedViewController.swift */,
 				69EEF7722925238200D5C700 /* FeedTableViewCell.swift */,
 				6954AF9029266AF80054F27D /* UploadViewController.swift */,
+				696762CD296713A80095F090 /* LiveFeedData.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				699125A02927CC5800630311 /* ProfileViewController.swift in Sources */,
 				69EEF7732925238200D5C700 /* FeedTableViewCell.swift in Sources */,
 				69BC4DD729422BDC008B99B4 /* GetData.swift in Sources */,
+				696762CE296713A80095F090 /* LiveFeedData.swift in Sources */,
 				699125A22927D0B500630311 /* ProfileDataView.swift in Sources */,
 				69EDFE9029438022007B536B /* ProfileData.swift in Sources */,
 			);

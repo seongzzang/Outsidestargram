@@ -87,7 +87,7 @@ final class ProfileViewController: UIViewController {
         
         setupLayout()
         setupNavigationItems()
-        getImage(with: url ?? URL.init(string: ""))
+        //getImage(with: url ?? URL.init(string: ""))
         
     }
 }
