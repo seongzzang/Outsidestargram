@@ -8,10 +8,11 @@
 import UIKit
 
 final class TabBarController: UITabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        let feedViewController = UINavigationController(rootViewController: FeedController())
+        let feedViewController = UINavigationController(rootViewController: FeedTotalViewController())
         feedViewController.tabBarItem = UITabBarItem(title: nil,
                                                      image: UIImage(systemName: "house"),
                                                      selectedImage: UIImage(systemName: "house.fill"))

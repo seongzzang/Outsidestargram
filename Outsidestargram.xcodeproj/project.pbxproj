@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6937740D2968605700B2AF88 /* FeedTotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6937740C2968605700B2AF88 /* FeedTotalViewController.swift */; };
 		6954AF9129266AF80054F27D /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6954AF9029266AF80054F27D /* UploadViewController.swift */; };
 		696762CE296713A80095F090 /* LiveFeedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696762CD296713A80095F090 /* LiveFeedData.swift */; };
 		699125A02927CC5800630311 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6991259F2927CC5800630311 /* ProfileViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6937740C2968605700B2AF88 /* FeedTotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTotalViewController.swift; sourceTree = "<group>"; };
 		6954AF9029266AF80054F27D /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		696762CD296713A80095F090 /* LiveFeedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFeedData.swift; sourceTree = "<group>"; };
 		6991259F2927CC5800630311 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				69EEF7722925238200D5C700 /* FeedTableViewCell.swift */,
 				6954AF9029266AF80054F27D /* UploadViewController.swift */,
 				696762CD296713A80095F090 /* LiveFeedData.swift */,
+				6937740C2968605700B2AF88 /* FeedTotalViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				696762CE296713A80095F090 /* LiveFeedData.swift in Sources */,
 				699125A22927D0B500630311 /* ProfileDataView.swift in Sources */,
 				69EDFE9029438022007B536B /* ProfileData.swift in Sources */,
+				6937740D2968605700B2AF88 /* FeedTotalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

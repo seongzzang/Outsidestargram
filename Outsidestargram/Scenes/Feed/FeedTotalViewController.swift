@@ -1,14 +1,14 @@
 //
-//  FeedController.swift
+//  FeedTotalViewController.swift
 //  Outsidestargram
 //
-//  Created by 양성혜 on 2022/12/19.
+//  Created by 양성혜 on 2023/01/06.
 //
 
 import UIKit
 import SnapKit
 
-final class FeedController: UIViewController {
+final class FeedTotalViewController: UIViewController {
 
     private lazy var scrollView = UIScrollView()
     
@@ -43,13 +43,13 @@ final class FeedController: UIViewController {
     
 }
 
-extension FeedController: UITableViewDelegate {
+extension FeedTotalViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         didTapScrollView()
     }
 }
 
-extension FeedController: UITableViewDataSource {
+extension FeedTotalViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
@@ -65,7 +65,7 @@ extension FeedController: UITableViewDataSource {
     
 }
 
-extension FeedController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension FeedTotalViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         var selectImage: UIImage?
         
@@ -87,7 +87,7 @@ extension FeedController: UIImagePickerControllerDelegate, UINavigationControlle
     }
 }
 
-private extension FeedController {
+private extension FeedTotalViewController {
     
     func setupNavigationBar() {
         navigationItem.title = "Outsidestargram"
